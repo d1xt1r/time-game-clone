@@ -35,16 +35,16 @@ public class TimeGame : MonoBehaviour {
 
     string GenerateMessage(float error) { // Generates and returns message based on the error from InputReceived 
         string message = "";
-        if (error < .15f) {
-            message = "Outstanding!";
-        } else if (error < .75f) {
-            message = "Exceeds expectations";
-        } else if (error < 1.25f) {
-            message = "Acceptable";
-        } else if (error < 1.75f) {
-            message = "Poor.";
+        if (error < .5f) {
+            message = "Outstanding! You're Like A Swiss Watch!";
+        } else if (error < 1.5f) {
+            message = "Close But Not Close Enough!";
+        } else if (error < 2f) {
+            message = "Come On You Can Do Better!";
+        } else if (error < 3f) {
+            message = "Not Even Close!";
         } else {
-            message = "Dreadful.";
+            message = "Are You Paying Any Attention At All?";
         }
         return message;
     }
